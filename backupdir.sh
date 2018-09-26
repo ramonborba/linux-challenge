@@ -2,4 +2,5 @@
 
 DIRPATH="$1"
 datetime=$(date '+%F %T')
-echo "$DIRPATH $datetime"
+cp -r "$DIRPATH" ~/backup/"$datetime"
+echo "Backup completed"
